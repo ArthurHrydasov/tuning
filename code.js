@@ -7,12 +7,9 @@ popup_open_c.forEach((element) => {
     body.style.overflow = "hidden";
     popup_c.classList.add("active");
     setTimeout(() => {
+       document.querySelector(".popup_curve_close").classList.add("active");
       popup_block_c.classList.add("active");
-      setTimeout(() => {
-        document.querySelector(".popup_curve_close").classList.add("active");
-      }, 300);
     }, 1);
-
   });
 });
 popup_close_c.forEach((element) => {
